@@ -1,7 +1,7 @@
 let racersArray = [
-    ['images/Wilee.jpg', 'images/WileE.gif'],
-    ['images/Roadrunner.jpg', 'images/RoadRunner.gif'],
-    ['images/sonic.jpg', 'images/sonic.gif']
+    ['Images/Wilee.jpg', 'Images/WileE.gif'],
+    ['Images/Roadrunner.jpg', 'Images/RoadRunner.gif'],
+    ['Images/sonic.jpg', 'Images/sonic.gif']
 ];
 let racers = document.querySelector("#racers");
 console.log(racersArray[0][0])
@@ -91,17 +91,17 @@ function checker(){
         case mover1:
             console.log("1st");
             winnerText.innerHTML = "Wile E Wins!";
-            winner.setAttribute("src", "images/Wilee.jpg");
+            winner.setAttribute("src", "Images/Wilee.jpg");
             break;
         case mover2:
             console.log("2nd");
             winnerText.innerHTML = "RoadRunner Wins!";
-            winner.setAttribute("src", "images/Roadrunner.jpg");
+            winner.setAttribute("src", "Images/Roadrunner.jpg");
             break;
         case mover3:
             console.log("3rd");
             winnerText.innerHTML = "sonic!";
-            winner.setAttribute("src", "images/sonic.jpg");
+            winner.setAttribute("src", "Images/sonic.jpg");
     }
 /*
      if(mover1 > mover2 && mover1 > mover3){
