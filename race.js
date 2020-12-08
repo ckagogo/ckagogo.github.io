@@ -1,7 +1,7 @@
 let racersArray = [
     ['Images/Wilee.jpg', 'Images/WileE.gif'],
     ['Images/Roadrunner.jpg', 'Images/RoadRunner.gif'],
-    ['Images/sonic.jpg', 'Images/sonic.gif']
+    ['Images/sonic.jpg', 'Images/Sonic.gif']
 ];
 let racers = document.querySelector("#racers");
 console.log(racersArray[0][0])
