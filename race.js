@@ -19,14 +19,12 @@ let sonic = "";
 
 
 let finishLine = document.documentElement.clientWidth - 200;
-restartButton.disabled = true;
+restartButton.ensabled = true;
 function displayRacers() {
     for (let x = 0; x < racersArray.length; x++) {
         racers.innerHTML += "<img class='racingRacers' src ='" + racersArray[x][0] + "'>";
     }
-
-
-
+    
 }
 displayRacers();
 let racingRacers = document.querySelectorAll(".racingRacers");
@@ -43,8 +41,8 @@ startButton.addEventListener("click", function () {
         roadrunner.setAttribute("src", racersArray[1][1]);
         sonic.setAttribute("src", racersArray[2][1]);
         startButton.style.opacity = "0";
-        greenLight.style.opacity = "1";
-        redLight.style.opacity = "0";
+        greenlight.style.opacity = "1";
+        redlight.style.opacity = "0";
         restartButton.disabled = true;
         startButton.disabled = true;
     }
@@ -105,16 +103,17 @@ function checker(){
             winnerText.innerHTML = "sonic!";
             winner.setAttribute("src", "images/sonic.jpg");
     }
-
-    // if(mover1 > mover2 && mover1 > mover3){
-    //     console.log("first won");
-    // }
-   // else if (mover2 > mover1 && mover2 > mover3) {
-    //     console.log("second won");
-    // }
-   //  else if (mover3 > mover1 && mover3 > mover2) {
-    //    console.log("third won");
-   //  }
+/*
+     if(mover1 > mover2 && mover1 > mover3){
+         console.log("first won");
+    }
+    else if (mover2 > mover1 && mover2 > mover3) {
+        console.log("second won");
+     }
+     else if (mover3 > mover1 && mover3 > mover2) {
+        console.log("third won");
+    }
+*/
 
 }
 
