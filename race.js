@@ -19,12 +19,12 @@ let sonic = "";
 
 
 let finishLine = document.documentElement.clientWidth - 200;
-restartButton.ensabled = true;
+restartButton.disabled = true;
 function displayRacers() {
     for (let x = 0; x < racersArray.length; x++) {
         racers.innerHTML += "<img class='racingRacers' src ='" + racersArray[x][0] + "'>";
     }
-    
+
 }
 displayRacers();
 let racingRacers = document.querySelectorAll(".racingRacers");
@@ -130,7 +130,7 @@ restartButton.addEventListener("click", function(){
     startButton.style.opacity = "1";
     restartButton.style.opacity = "0";
     winner.style.opacity = "0";
-    greenLight.style.opacity = "0";
+    greenlight.style.opacity = "0";
     redlight.style.opacity = "1";
     winnerText.style.opacity = "0";
     started = false;
