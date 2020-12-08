@@ -10,8 +10,8 @@ let start = "";
 let startButton = document.querySelector("#startButton");
 let restartButton = document.querySelector("#restartButton");
 let winner = document.querySelector("#winner");
-let redLight = document.querySelector("#redLight");
-let greenLight = document.querySelector("#greenLight");
+let redLight = document.querySelector("#redlight");
+let greenLight = document.querySelector("#greenlight");
 let winnerText = document.querySelector("#winnerText");
 let wilee = "";
 let roadrunner = "";
@@ -34,14 +34,14 @@ let racingRacers = document.querySelectorAll(".racingRacers");
 wilee = racingRacers[0];
 roadrunner = racingRacers[1];
 sonic = racingRacers[2];
-console.log(batman)
+console.log(wilee)
 startButton.addEventListener("click", function () {
     if (started == false) {
         start = setInterval(startRace, 200);
         started = true;
-        batman.setAttribute("src", racersArray[0][1]);
-        dc.setAttribute("src", racersArray[1][1]);
-        kk.setAttribute("src", racersArray[2][1]);
+        wilee.setAttribute("src", racersArray[0][1]);
+        roadrunner.setAttribute("src", racersArray[1][1]);
+        sonic.setAttribute("src", racersArray[2][1]);
         startButton.style.opacity = "0";
         greenLight.style.opacity = "1";
         redLight.style.opacity = "0";
@@ -86,7 +86,7 @@ function checker(){
     console.log("The race has ended");
     winner.style.opacity = 1;
     racers.style.opacity = "0";
-    greenLight.style.opacity = "0";
+    greenlight.style.opacity = "0";
     restartButton.disabled = false;
     winnerText.style.opacity = "1";
     switch (Math.max(mover1, mover2, mover3)) {
@@ -106,15 +106,15 @@ function checker(){
             winner.setAttribute("src", "images/sonic.jpg");
     }
 
-//     if(mover1 > mover2 && mover1 > mover3){
-//         console.log("first won");
-//     }
-//    else if (mover2 > mover1 && mover2 > mover3) {
-//         console.log("second won");
-//     }
-//     else if (mover3 > mover1 && mover3 > mover2) {
-//         console.log("third won");
-//     }
+    // if(mover1 > mover2 && mover1 > mover3){
+    //     console.log("first won");
+    // }
+   // else if (mover2 > mover1 && mover2 > mover3) {
+    //     console.log("second won");
+    // }
+   //  else if (mover3 > mover1 && mover3 > mover2) {
+    //    console.log("third won");
+   //  }
 
 }
 
@@ -132,7 +132,7 @@ restartButton.addEventListener("click", function(){
     restartButton.style.opacity = "0";
     winner.style.opacity = "0";
     greenLight.style.opacity = "0";
-    redLight.style.opacity = "1";
+    redlight.style.opacity = "1";
     winnerText.style.opacity = "0";
     started = false;
     wilee.setAttribute("src", racersArray[0][0]);

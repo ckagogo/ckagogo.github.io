@@ -17,11 +17,11 @@
     
 }
 
-#redLight, #greenLight{
+#redlight, #greenlight{
     height: 100px; width:11vw; position: absolute; transition: 1s; right: 10%
 }
 
-#redLight{
+#redlight{
   opacity: 0;
 }
 
@@ -34,7 +34,7 @@
     transition: 1s
 }
 
-#greenLight{
+#greenlight{
    opacity: 0;
 }
 
